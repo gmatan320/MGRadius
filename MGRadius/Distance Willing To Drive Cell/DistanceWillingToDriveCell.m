@@ -30,10 +30,13 @@
 
 @implementation DistanceWillingToDriveCell
 
++ (void) initializeCellForCollectionView: (UICollectionView *) collectionView {
+    [collectionView registerNib: [DistanceWillingToDriveCell nib] forCellWithReuseIdentifier: [DistanceWillingToDriveCell identifier]];
+}
+
 - (void)awakeFromNib {
     [super awakeFromNib];
     [self registerNibs];
-    [self setLocalization];
     self.xPositionArr = [NSMutableArray array];
     self.viewForCarMove.delegate = self;
     self.pointView.delegate = self;
@@ -45,8 +48,8 @@
     [self.collectionView registerNib: [LabelFormCell nib] forCellWithReuseIdentifier: [LabelFormCell identifier]];
 }
 
-- (void) setLocalization {
-    self.lblTitle.text = @"will be";
+- (void) setTitle: (NSString *) title {
+    self.lblTitle.text = title;
 }
 
 - (void) setKmTextWithIntegersArray: (NSArray *) intArr {
@@ -96,7 +99,6 @@
 }
 
 - (int) getRadiusKM {
-
     return [self.kmTxtArr[self.kmWillingToDrive] intValue];
 }
 
@@ -132,14 +134,10 @@
 
 -(void)setKmWillingToDrive:(KmWillingToDriveIndex) kmWillingToDrive {
     _kmWillingToDrive = kmWillingToDrive;
-//    if (self.xPositionArr.count) {
-//        CGFloat centerX = (int)[self.xPositionArr[kmWillingToDrive] floatValue];
-//        [self moveCarImageToFrame: centerX animation:YES];
-//    }
 }
 
 - (void) setMainColor: (UIColor *) color {
-    self.mainColor = color;
+    _mainColor = color;
 }
 
 - (void) setUserInteraction: (BOOL) available {

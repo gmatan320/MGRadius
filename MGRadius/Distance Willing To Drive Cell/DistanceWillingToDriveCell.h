@@ -28,6 +28,8 @@ typedef enum : NSUInteger {
 + (CGSize) heightWithCollectionViewWidth:(CGFloat)collectionViewWidth;
 - (void) setUserInteraction: (BOOL) available;
 - (void) setMainColor: (UIColor *) color;
+- (void) setTitle: (NSString *) title;
++ (void) initializeCellForCollectionView: (UICollectionView *) collectionView;
 
 @end
 
