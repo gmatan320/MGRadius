@@ -22,11 +22,12 @@ typedef enum : NSUInteger {
 
 @property (nonatomic, strong) id<DistanceWillingToDriveDelegate> delegate;
 @property (nonatomic) BOOL isEditMode;
+- (void) setKmTextWithIntegersArray: (NSArray *) intArr;
 - (int) getRadiusKM;
 - (void) setRadiusKM: (int) radius;
 + (CGSize) heightWithCollectionViewWidth:(CGFloat)collectionViewWidth;
 - (void) setUserInteraction: (BOOL) available;
-+ (void) initializeCellForCollectionView: (UICollectionView *) collectionView;
+- (void) setMainColor: (UIColor *) color;
 
 @end
 

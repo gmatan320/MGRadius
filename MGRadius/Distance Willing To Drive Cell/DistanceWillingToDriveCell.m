@@ -24,6 +24,7 @@
 @property (nonatomic)                   NSMutableArray          *xPositionArr;
 @property (nonatomic)                   KmWillingToDriveIndex   kmWillingToDrive;
 
+@property (nonatomic)                   UIColor                 *mainColor;
 
 @end
 
@@ -33,7 +34,6 @@
     [super awakeFromNib];
     [self registerNibs];
     [self setLocalization];
-    [self setKmTextArray];
     self.xPositionArr = [NSMutableArray array];
     self.viewForCarMove.delegate = self;
     self.pointView.delegate = self;
@@ -49,17 +49,18 @@
     self.lblTitle.text = @"will be";
 }
 
-+ (void)initializeCellForCollectionView:(UICollectionView *)collectionView {
-    NSBundle *bundle = [NSBundle bundleForClass: [DistanceWillingToDriveCell class]];
-    [bundle loadNibNamed: @"DistanceWillingToDriveCell" owner: nil options: nil];
-    [collectionView registerNib: [DistanceWillingToDriveCell nib] forCellWithReuseIdentifier: [DistanceWillingToDriveCell identifier]];
-}
-
-
-
-- (void) setKmTextArray {
-//    self.kmTxtArr = [[NSArray alloc]initWithObjects: @50, @40, @30, @20, @10, nil];
-    self.kmTxtArr = [[NSArray alloc]initWithObjects: @150, @100, @50, @25, @10, nil];
+- (void) setKmTextWithIntegersArray: (NSArray *) intArr {
+    @try {
+        for (int i = 0; i < intArr.count; i++) {
+            int r = [intArr[i] intValue];
+            NSLog(@"%d", r);
+        }
+    }
+    @catch (NSException *e){
+        NSLog(@"Enter only INTEGERS:/n%@", e.reason);
+    }
+    self.kmTxtArr = [NSArray arrayWithArray: intArr];
+//    self.kmTxtArr = [[NSArray alloc]initWithObjects: @150, @100, @50, @25, @10, nil];
 }
 
 - (void) moveCarImageToFrame: (CGFloat) centerX animation: (BOOL) animated {
@@ -95,44 +96,30 @@
 }
 
 - (int) getRadiusKM {
-    switch (self.kmWillingToDrive) {
-        case FIRST:
-            return 10;
-            break;
-        case SECOND:
-            return 25;
-            break;
-        case THIRD:
-            return 50;
-            break;
-        case FOURTH:
-            return 100;
-            break;
-        case FIFTH:
-            return 150;
-            break;
-        default:
-            return 0;
-            break;
-    }
+
+    return [self.kmTxtArr[self.kmWillingToDrive] intValue];
 }
 
 - (void) setRadiusKM: (int) radius {
+
     int kmWillingToDrive = 0;
-    
-    if (radius < 18) {
+    int first = [self.kmTxtArr[0] intValue];
+    int second = [self.kmTxtArr[1] intValue];
+    int third = [self.kmTxtArr[2] intValue];
+    int fourth = [self.kmTxtArr[3] intValue];
+    if (radius < first) {
         kmWillingToDrive = FIRST;
     }
-    else if (radius >= 18 && radius < 38) {
+    else if (radius >= first && radius < second) {
         kmWillingToDrive = SECOND;
     }
-    else if (radius >= 38 && radius < 75) {
+    else if (radius >= second && radius < third) {
         kmWillingToDrive = THIRD;
     }
-    else if (radius >= 75 && radius < 125) {
+    else if (radius >= third && radius < fourth) {
         kmWillingToDrive = FOURTH;
     }
-    else if (radius >= 125) {
+    else if (radius >= fourth) {
         kmWillingToDrive = FIFTH;
     }
     self.kmWillingToDrive = kmWillingToDrive;
@@ -151,17 +138,27 @@
 //    }
 }
 
+- (void) setMainColor: (UIColor *) color {
+    self.mainColor = color;
+}
+
 - (void) setUserInteraction: (BOOL) available {
     [self setUserInteractionEnabled: available];
     self.imgViewCar.image = [self.imgViewCar.image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     if (available) {
-        self.imgViewCar.tintColor = [UIColor blueColor];
-        self.pointView.backgroundColor = [UIColor blueColor];
+        if (self.mainColor) {
+            self.imgViewCar.tintColor = self.mainColor;
+            self.pointView.backgroundColor = self.mainColor;
+        }
+        else {
+            self.imgViewCar.tintColor = [UIColor blueColor];
+            self.pointView.backgroundColor = [UIColor blueColor];
+        }
     }
     else {
-        UIColor* defaultDray = [UIColor colorWithRed: 164.0 / 255 green:166.0 / 255 blue: 180.0 / 255 alpha: 1.0];
-        self.imgViewCar.tintColor = defaultDray;
-        self.pointView.backgroundColor = defaultDray;
+        UIColor* defaultGray = [UIColor colorWithRed: 164.0 / 255 green:166.0 / 255 blue: 180.0 / 255 alpha: 1.0];
+        self.imgViewCar.tintColor = defaultGray;
+        self.pointView.backgroundColor = defaultGray;
     }
 }
 
