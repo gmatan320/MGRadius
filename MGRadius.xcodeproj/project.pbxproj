@@ -7,9 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D0FFE3531808A4043F94B31 /* Pods_MGRadiusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96218A5ED7B68784E29D1755 /* Pods_MGRadiusTests.framework */; };
+		9E035A248D54AD08F1E7C308 /* Pods_MGRadius.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B112D119FA259B868B38C3A1 /* Pods_MGRadius.framework */; };
+		F2793700208DBD8A0095214D /* drivingCar.png in Resources */ = {isa = PBXBuildFile; fileRef = F27936FD208DBD8A0095214D /* drivingCar.png */; };
+		F2793701208DBD8A0095214D /* drivingCar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F27936FE208DBD8A0095214D /* drivingCar@2x.png */; };
+		F2793702208DBD8A0095214D /* drivingCar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F27936FF208DBD8A0095214D /* drivingCar@3x.png */; };
 		F2C5D659208CB26B0008BF3E /* MGRadius.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2C5D64F208CB26B0008BF3E /* MGRadius.framework */; };
 		F2C5D65E208CB26B0008BF3E /* MGRadiusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C5D65D208CB26B0008BF3E /* MGRadiusTests.swift */; };
 		F2C5D660208CB26B0008BF3E /* MGRadius.h in Headers */ = {isa = PBXBuildFile; fileRef = F2C5D652208CB26B0008BF3E /* MGRadius.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2C5D700208CB9430008BF3E /* BaseSupplierCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F2C5D6F5208CB9430008BF3E /* BaseSupplierCollectionViewCell.h */; };
+		F2C5D701208CB9430008BF3E /* BaseSupplierCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C5D6F6208CB9430008BF3E /* BaseSupplierCollectionViewCell.m */; };
+		F2C5D702208CB9430008BF3E /* LabelFormCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C5D6F8208CB9430008BF3E /* LabelFormCell.xib */; };
+		F2C5D703208CB9430008BF3E /* MovingCustomView.h in Headers */ = {isa = PBXBuildFile; fileRef = F2C5D6F9208CB9430008BF3E /* MovingCustomView.h */; };
+		F2C5D704208CB9430008BF3E /* DistanceWillingToDriveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C5D6FA208CB9430008BF3E /* DistanceWillingToDriveCell.m */; };
+		F2C5D705208CB9430008BF3E /* LabelFormCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F2C5D6FB208CB9430008BF3E /* LabelFormCell.h */; };
+		F2C5D706208CB9430008BF3E /* MovingCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C5D6FC208CB9430008BF3E /* MovingCustomView.m */; };
+		F2C5D707208CB9430008BF3E /* DistanceWillingToDriveCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F2C5D6FD208CB9430008BF3E /* DistanceWillingToDriveCell.h */; };
+		F2C5D708208CB9430008BF3E /* DistanceWillingToDriveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C5D6FE208CB9430008BF3E /* DistanceWillingToDriveCell.xib */; };
+		F2C5D709208CB9430008BF3E /* LabelFormCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C5D6FF208CB9430008BF3E /* LabelFormCell.m */; };
+		F2C5D70B208CBC670008BF3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2C5D70A208CBC670008BF3E /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +39,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		105CD2EE72CBBDF1D80D8578 /* Pods-MGRadiusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGRadiusTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MGRadiusTests/Pods-MGRadiusTests.release.xcconfig"; sourceTree = "<group>"; };
+		49BE5A75FA2CF1E966953B46 /* Pods-MGRadius.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGRadius.release.xcconfig"; path = "Pods/Target Support Files/Pods-MGRadius/Pods-MGRadius.release.xcconfig"; sourceTree = "<group>"; };
+		96218A5ED7B68784E29D1755 /* Pods_MGRadiusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MGRadiusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B112D119FA259B868B38C3A1 /* Pods_MGRadius.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MGRadius.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C95F41356F640C0DD6F56A35 /* Pods-MGRadius.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGRadius.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MGRadius/Pods-MGRadius.debug.xcconfig"; sourceTree = "<group>"; };
+		C96213E8A598E79BAC5BD449 /* Pods-MGRadiusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGRadiusTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MGRadiusTests/Pods-MGRadiusTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F27936FD208DBD8A0095214D /* drivingCar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = drivingCar.png; path = "MGRadius/Distance Willing To Drive Cell/Assets.xcassets/drivingCar.imageset/drivingCar.png"; sourceTree = SOURCE_ROOT; };
+		F27936FE208DBD8A0095214D /* drivingCar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "drivingCar@2x.png"; path = "MGRadius/Distance Willing To Drive Cell/Assets.xcassets/drivingCar.imageset/drivingCar@2x.png"; sourceTree = SOURCE_ROOT; };
+		F27936FF208DBD8A0095214D /* drivingCar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "drivingCar@3x.png"; path = "MGRadius/Distance Willing To Drive Cell/Assets.xcassets/drivingCar.imageset/drivingCar@3x.png"; sourceTree = SOURCE_ROOT; };
 		F2C5D64F208CB26B0008BF3E /* MGRadius.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MGRadius.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2C5D652208CB26B0008BF3E /* MGRadius.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGRadius.h; sourceTree = "<group>"; };
 		F2C5D653208CB26B0008BF3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2C5D658208CB26B0008BF3E /* MGRadiusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MGRadiusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2C5D65D208CB26B0008BF3E /* MGRadiusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGRadiusTests.swift; sourceTree = "<group>"; };
 		F2C5D65F208CB26B0008BF3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2C5D6F5208CB9430008BF3E /* BaseSupplierCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSupplierCollectionViewCell.h; sourceTree = "<group>"; };
+		F2C5D6F6208CB9430008BF3E /* BaseSupplierCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSupplierCollectionViewCell.m; sourceTree = "<group>"; };
+		F2C5D6F8208CB9430008BF3E /* LabelFormCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LabelFormCell.xib; sourceTree = "<group>"; };
+		F2C5D6F9208CB9430008BF3E /* MovingCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovingCustomView.h; sourceTree = "<group>"; };
+		F2C5D6FA208CB9430008BF3E /* DistanceWillingToDriveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistanceWillingToDriveCell.m; sourceTree = "<group>"; };
+		F2C5D6FB208CB9430008BF3E /* LabelFormCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelFormCell.h; sourceTree = "<group>"; };
+		F2C5D6FC208CB9430008BF3E /* MovingCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovingCustomView.m; sourceTree = "<group>"; };
+		F2C5D6FD208CB9430008BF3E /* DistanceWillingToDriveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistanceWillingToDriveCell.h; sourceTree = "<group>"; };
+		F2C5D6FE208CB9430008BF3E /* DistanceWillingToDriveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DistanceWillingToDriveCell.xib; sourceTree = "<group>"; };
+		F2C5D6FF208CB9430008BF3E /* LabelFormCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelFormCell.m; sourceTree = "<group>"; };
+		F2C5D70A208CBC670008BF3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E035A248D54AD08F1E7C308 /* Pods_MGRadius.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,18 +81,51 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2C5D659208CB26B0008BF3E /* MGRadius.framework in Frameworks */,
+				9D0FFE3531808A4043F94B31 /* Pods_MGRadiusTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2218EDA1B138A8DE84C464D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C95F41356F640C0DD6F56A35 /* Pods-MGRadius.debug.xcconfig */,
+				49BE5A75FA2CF1E966953B46 /* Pods-MGRadius.release.xcconfig */,
+				C96213E8A598E79BAC5BD449 /* Pods-MGRadiusTests.debug.xcconfig */,
+				105CD2EE72CBBDF1D80D8578 /* Pods-MGRadiusTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C78F01E3861F5B572F129240 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B112D119FA259B868B38C3A1 /* Pods_MGRadius.framework */,
+				96218A5ED7B68784E29D1755 /* Pods_MGRadiusTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F27936FC208DBD790095214D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F27936FD208DBD8A0095214D /* drivingCar.png */,
+				F27936FE208DBD8A0095214D /* drivingCar@2x.png */,
+				F27936FF208DBD8A0095214D /* drivingCar@3x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		F2C5D645208CB26B0008BF3E = {
 			isa = PBXGroup;
 			children = (
 				F2C5D651208CB26B0008BF3E /* MGRadius */,
 				F2C5D65C208CB26B0008BF3E /* MGRadiusTests */,
 				F2C5D650208CB26B0008BF3E /* Products */,
+				2218EDA1B138A8DE84C464D5 /* Pods */,
+				C78F01E3861F5B572F129240 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +141,9 @@
 		F2C5D651208CB26B0008BF3E /* MGRadius */ = {
 			isa = PBXGroup;
 			children = (
+				F27936FC208DBD790095214D /* Resources */,
+				F2C5D6F4208CB9430008BF3E /* BaseSupplierCollectionViewCell */,
+				F2C5D6F7208CB9430008BF3E /* Distance Willing To Drive Cell */,
 				F2C5D652208CB26B0008BF3E /* MGRadius.h */,
 				F2C5D653208CB26B0008BF3E /* Info.plist */,
 			);
@@ -86,6 +159,31 @@
 			path = MGRadiusTests;
 			sourceTree = "<group>";
 		};
+		F2C5D6F4208CB9430008BF3E /* BaseSupplierCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				F2C5D6F5208CB9430008BF3E /* BaseSupplierCollectionViewCell.h */,
+				F2C5D6F6208CB9430008BF3E /* BaseSupplierCollectionViewCell.m */,
+			);
+			path = BaseSupplierCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		F2C5D6F7208CB9430008BF3E /* Distance Willing To Drive Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F2C5D6F8208CB9430008BF3E /* LabelFormCell.xib */,
+				F2C5D6F9208CB9430008BF3E /* MovingCustomView.h */,
+				F2C5D6FA208CB9430008BF3E /* DistanceWillingToDriveCell.m */,
+				F2C5D6FB208CB9430008BF3E /* LabelFormCell.h */,
+				F2C5D6FC208CB9430008BF3E /* MovingCustomView.m */,
+				F2C5D6FD208CB9430008BF3E /* DistanceWillingToDriveCell.h */,
+				F2C5D6FE208CB9430008BF3E /* DistanceWillingToDriveCell.xib */,
+				F2C5D6FF208CB9430008BF3E /* LabelFormCell.m */,
+				F2C5D70A208CBC670008BF3E /* Assets.xcassets */,
+			);
+			path = "Distance Willing To Drive Cell";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -93,6 +191,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2C5D703208CB9430008BF3E /* MovingCustomView.h in Headers */,
+				F2C5D705208CB9430008BF3E /* LabelFormCell.h in Headers */,
+				F2C5D700208CB9430008BF3E /* BaseSupplierCollectionViewCell.h in Headers */,
+				F2C5D707208CB9430008BF3E /* DistanceWillingToDriveCell.h in Headers */,
 				F2C5D660208CB26B0008BF3E /* MGRadius.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,6 +206,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2C5D663208CB26B0008BF3E /* Build configuration list for PBXNativeTarget "MGRadius" */;
 			buildPhases = (
+				16CA88FC95E0D78AFEF63E9A /* [CP] Check Pods Manifest.lock */,
 				F2C5D64A208CB26B0008BF3E /* Sources */,
 				F2C5D64B208CB26B0008BF3E /* Frameworks */,
 				F2C5D64C208CB26B0008BF3E /* Headers */,
@@ -122,6 +225,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2C5D666208CB26B0008BF3E /* Build configuration list for PBXNativeTarget "MGRadiusTests" */;
 			buildPhases = (
+				CD557F9B8AA3F554964920BC /* [CP] Check Pods Manifest.lock */,
 				F2C5D654208CB26B0008BF3E /* Sources */,
 				F2C5D655208CB26B0008BF3E /* Frameworks */,
 				F2C5D656208CB26B0008BF3E /* Resources */,
@@ -177,6 +281,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2793701208DBD8A0095214D /* drivingCar@2x.png in Resources */,
+				F2C5D702208CB9430008BF3E /* LabelFormCell.xib in Resources */,
+				F2793702208DBD8A0095214D /* drivingCar@3x.png in Resources */,
+				F2C5D70B208CBC670008BF3E /* Assets.xcassets in Resources */,
+				F2793700208DBD8A0095214D /* drivingCar.png in Resources */,
+				F2C5D708208CB9430008BF3E /* DistanceWillingToDriveCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,11 +299,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		16CA88FC95E0D78AFEF63E9A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MGRadius-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD557F9B8AA3F554964920BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MGRadiusTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F2C5D64A208CB26B0008BF3E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2C5D701208CB9430008BF3E /* BaseSupplierCollectionViewCell.m in Sources */,
+				F2C5D706208CB9430008BF3E /* MovingCustomView.m in Sources */,
+				F2C5D709208CB9430008BF3E /* LabelFormCell.m in Sources */,
+				F2C5D704208CB9430008BF3E /* DistanceWillingToDriveCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +491,7 @@
 		};
 		F2C5D664208CB26B0008BF3E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C95F41356F640C0DD6F56A35 /* Pods-MGRadius.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -363,6 +517,7 @@
 		};
 		F2C5D665208CB26B0008BF3E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49BE5A75FA2CF1E966953B46 /* Pods-MGRadius.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -388,6 +543,7 @@
 		};
 		F2C5D667208CB26B0008BF3E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C96213E8A598E79BAC5BD449 /* Pods-MGRadiusTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7LC8QKKN6G;
@@ -406,6 +562,7 @@
 		};
 		F2C5D668208CB26B0008BF3E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 105CD2EE72CBBDF1D80D8578 /* Pods-MGRadiusTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7LC8QKKN6G;
