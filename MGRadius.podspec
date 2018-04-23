@@ -8,7 +8,7 @@ s.summary = "MGRadius let you choose radius to drive"
 s.requires_arc = true
 
 # 2
-s.version = "1.0.1"
+s.version = "1.0.2"
 
 # 3
 s.license = { :type => 'MIT', :text => <<-LICENSE
@@ -52,8 +52,8 @@ s.framework = "UIKit"
 # s.dependency 'MBProgressHUD', '~> 0.9.0'
 
 # 8
-s.source_files = "MGRadius/**/*.{h,m}"
+s.source_files = "MGRadius/**/*.{h,m, xib}"
 
 # 9
-# s.resources = "MGRadius/**/*.{png,xib}"
+# s.resources = "MGRadius/**/*.{png}"
 end
