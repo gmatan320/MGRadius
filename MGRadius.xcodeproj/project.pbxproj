@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		9D0FFE3531808A4043F94B31 /* Pods_MGRadiusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96218A5ED7B68784E29D1755 /* Pods_MGRadiusTests.framework */; };
 		9E035A248D54AD08F1E7C308 /* Pods_MGRadius.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B112D119FA259B868B38C3A1 /* Pods_MGRadius.framework */; };
-		F2793700208DBD8A0095214D /* drivingCar.png in Resources */ = {isa = PBXBuildFile; fileRef = F27936FD208DBD8A0095214D /* drivingCar.png */; };
-		F2793701208DBD8A0095214D /* drivingCar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F27936FE208DBD8A0095214D /* drivingCar@2x.png */; };
-		F2793702208DBD8A0095214D /* drivingCar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F27936FF208DBD8A0095214D /* drivingCar@3x.png */; };
+		F279370A208DC8940095214D /* drivingCar.png in Resources */ = {isa = PBXBuildFile; fileRef = F2793707208DC8940095214D /* drivingCar.png */; };
+		F279370B208DC8940095214D /* drivingCar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2793708208DC8940095214D /* drivingCar@2x.png */; };
+		F279370C208DC8940095214D /* drivingCar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2793709208DC8940095214D /* drivingCar@3x.png */; };
 		F2C5D659208CB26B0008BF3E /* MGRadius.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2C5D64F208CB26B0008BF3E /* MGRadius.framework */; };
 		F2C5D65E208CB26B0008BF3E /* MGRadiusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C5D65D208CB26B0008BF3E /* MGRadiusTests.swift */; };
 		F2C5D660208CB26B0008BF3E /* MGRadius.h in Headers */ = {isa = PBXBuildFile; fileRef = F2C5D652208CB26B0008BF3E /* MGRadius.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -45,9 +45,9 @@
 		B112D119FA259B868B38C3A1 /* Pods_MGRadius.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MGRadius.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C95F41356F640C0DD6F56A35 /* Pods-MGRadius.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGRadius.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MGRadius/Pods-MGRadius.debug.xcconfig"; sourceTree = "<group>"; };
 		C96213E8A598E79BAC5BD449 /* Pods-MGRadiusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGRadiusTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MGRadiusTests/Pods-MGRadiusTests.debug.xcconfig"; sourceTree = "<group>"; };
-		F27936FD208DBD8A0095214D /* drivingCar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = drivingCar.png; path = "MGRadius/Distance Willing To Drive Cell/Assets.xcassets/drivingCar.imageset/drivingCar.png"; sourceTree = SOURCE_ROOT; };
-		F27936FE208DBD8A0095214D /* drivingCar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "drivingCar@2x.png"; path = "MGRadius/Distance Willing To Drive Cell/Assets.xcassets/drivingCar.imageset/drivingCar@2x.png"; sourceTree = SOURCE_ROOT; };
-		F27936FF208DBD8A0095214D /* drivingCar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "drivingCar@3x.png"; path = "MGRadius/Distance Willing To Drive Cell/Assets.xcassets/drivingCar.imageset/drivingCar@3x.png"; sourceTree = SOURCE_ROOT; };
+		F2793707208DC8940095214D /* drivingCar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drivingCar.png; sourceTree = "<group>"; };
+		F2793708208DC8940095214D /* drivingCar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "drivingCar@2x.png"; sourceTree = "<group>"; };
+		F2793709208DC8940095214D /* drivingCar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "drivingCar@3x.png"; sourceTree = "<group>"; };
 		F2C5D64F208CB26B0008BF3E /* MGRadius.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MGRadius.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2C5D652208CB26B0008BF3E /* MGRadius.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGRadius.h; sourceTree = "<group>"; };
 		F2C5D653208CB26B0008BF3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -111,9 +111,9 @@
 		F27936FC208DBD790095214D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				F27936FD208DBD8A0095214D /* drivingCar.png */,
-				F27936FE208DBD8A0095214D /* drivingCar@2x.png */,
-				F27936FF208DBD8A0095214D /* drivingCar@3x.png */,
+				F2793707208DC8940095214D /* drivingCar.png */,
+				F2793708208DC8940095214D /* drivingCar@2x.png */,
+				F2793709208DC8940095214D /* drivingCar@3x.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -281,11 +281,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2793701208DBD8A0095214D /* drivingCar@2x.png in Resources */,
+				F279370B208DC8940095214D /* drivingCar@2x.png in Resources */,
 				F2C5D702208CB9430008BF3E /* LabelFormCell.xib in Resources */,
-				F2793702208DBD8A0095214D /* drivingCar@3x.png in Resources */,
+				F279370C208DC8940095214D /* drivingCar@3x.png in Resources */,
 				F2C5D70B208CBC670008BF3E /* Assets.xcassets in Resources */,
-				F2793700208DBD8A0095214D /* drivingCar.png in Resources */,
+				F279370A208DC8940095214D /* drivingCar.png in Resources */,
 				F2C5D708208CB9430008BF3E /* DistanceWillingToDriveCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
