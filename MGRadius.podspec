@@ -2,13 +2,13 @@ Pod::Spec.new do |s|
 
 # 1
 s.platform = :ios
-s.ios.deployment_target = '8.0'
+s.ios.deployment_target = '9.0'
 s.name = "MGRadius"
 s.summary = "MGRadius let you choose radius to drive"
 s.requires_arc = true
 
 # 2
-s.version = "1.0.4"
+s.version = "1.0.5"
 
 # 3
 s.license = { :type => 'MIT', :text => <<-LICENSE
@@ -55,5 +55,5 @@ s.framework = "UIKit"
 s.source_files = "MGRadius/**/*.{h,m}"
 
 # 9
-# s.resources = "MGRadius/**/*.{png,xib,jpg,jpeg,storyboard}"
+s.resources = "MGRadius/**/*.{png,xib}"
 end

@@ -49,6 +49,12 @@
     self.lblTitle.text = @"will be";
 }
 
++ (void)initializeCellForCollectionView:(UICollectionView *)collectionView {
+    NSBundle *bundle = [NSBundle bundleForClass: [DistanceWillingToDriveCell class]];
+    [bundle loadNibNamed: @"DistanceWillingToDriveCell" owner: nil options: nil];
+    [collectionView registerNib: [DistanceWillingToDriveCell nib] forCellWithReuseIdentifier: [DistanceWillingToDriveCell identifier]];
+}
+
 
 
 - (void) setKmTextArray {

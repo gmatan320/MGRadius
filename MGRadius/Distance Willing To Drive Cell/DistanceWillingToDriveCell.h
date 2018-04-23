@@ -26,6 +26,7 @@ typedef enum : NSUInteger {
 - (void) setRadiusKM: (int) radius;
 + (CGSize) heightWithCollectionViewWidth:(CGFloat)collectionViewWidth;
 - (void) setUserInteraction: (BOOL) available;
++ (void) initializeCellForCollectionView: (UICollectionView *) collectionView;
 
 @end
 
