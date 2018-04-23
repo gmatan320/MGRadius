@@ -8,7 +8,7 @@ s.summary = "MGRadius let you choose radius to drive"
 s.requires_arc = true
 
 # 2
-s.version = "1.0.3"
+s.version = "1.0.4"
 
 # 3
 s.license = { :type => 'MIT', :text => <<-LICENSE
@@ -55,5 +55,5 @@ s.framework = "UIKit"
 s.source_files = "MGRadius/**/*.{h,m}"
 
 # 9
-# s.resources = "MGRadius/**/*.{png, xib, jpg, jpeg, storyboard}"
+# s.resources = "MGRadius/**/*.{png,xib,jpg,jpeg,storyboard}"
 end
